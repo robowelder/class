@@ -45,7 +45,7 @@ dispatcher.add_handler(CommandHandler('help', help_))
 dispatcher.add_handler(MessageHandler(Filters.text, message))
 dispatcher.add_handler(MessageHandler(Filters.photo, send_image))
 dispatcher.add_handler(CommandHandler('send_image', send_image))
-
+dispatcher.add_handler(CommandHandler('send_photo', send_photo))
 updater.start_polling()
 updater.idle()
 
