@@ -33,7 +33,7 @@ def send_image(updater, context):
     chat_id = updater.message.chat_id
 
 # Replace image_path with the path to your image
-    photo = open('/home/user1/runs/detect/predict/img.jpg', 'rb')
+    photo = open('/home/user1/class/runs/detect/predict/img.jpg', 'rb')
     bot.send_photo(chat_id=chat_id, photo=photo)
 
 updater = Updater('6775806362:AAF6kkrbwpJPb0Xz3ypmSWytuLSgfA10qsA')
@@ -49,7 +49,4 @@ dispatcher.add_handler(CommandHandler('send_image', send_image))
 updater.start_polling()
 updater.idle()
 
-import sys
-values = sys.modules.keys()
-with open("file.txt", "w") as output:
-    output.write(str(values))
+
