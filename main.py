@@ -33,7 +33,7 @@ def send_image(updater, context):
     chat_id = updater.message.chat_id
 
 # Replace image_path with the path to your image
-    photo = open('/runs/detect/predict/img.jpg', 'rb')
+    photo = open('/home/user1/runs/detect/predict/img.jpg', 'rb')
     bot.send_photo(chat_id=chat_id, photo=photo)
 
 updater = Updater('6775806362:AAF6kkrbwpJPb0Xz3ypmSWytuLSgfA10qsA')
