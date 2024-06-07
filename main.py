@@ -1,15 +1,11 @@
 
 from telegram.ext import Updater, Filters, CommandHandler, MessageHandler
-import cv2
 import numpy as np
 from ultralytics import YOLO
 from IPython.display import Image
 
 # trained model 
 model = YOLO('best.pt')
-#model = YOLO('yolov8n.pt')
-
-#bot
 
 def start(updater, context):
     updater.message.reply_text("Привет ! \n Отправь картинку \ud83d\udd2e")
